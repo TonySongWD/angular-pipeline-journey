@@ -11,18 +11,19 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '12.11.1'
-  displayName: 'Install Node.js 12.11.1'
+    versionSpec: '12.18.1'
+  displayName: 'Install Node.js 12.18.1'
 
 - task: Npm@1
   displayName: 'Install Angular CLI'
   inputs:
     command: custom
     verbose: false
-    customCommand: 'install @angular/cli@9.1.12'
+    customCommand: 'install @angular/cli@8.3.29'
 - task: Npm@1
   displayName: 'npm install'
   inputs:
+    command: 'install'
     verbose: false
 - task: Npm@1
   displayName: 'Build'

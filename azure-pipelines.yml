@@ -13,8 +13,6 @@ jobs:
   steps:
   - script: echo template expression ${{ variables.webRepoBranchName }}
   - script: echo template expression ${{ variables.useIDAM }}
-  - script: echo Runtime expressions $[variables.webRepoBranchName]
-  - script: echo Runtime expressions $[variables.useIDAM]
   - script: echo Macro syntax $(webRepoBranchName)
   - script: echo Macro syntax $(variables.useIDAM)
 

@@ -14,7 +14,7 @@ jobs:
   - script: echo template expression ${{ variables.webRepoBranchName }}
   - script: echo template expression ${{ variables.useIDAM }}
   - script: echo Macro syntax $(webRepoBranchName)
-  - script: echo Macro syntax $(variables.useIDAM)
+  - script: echo Macro syntax $(useIDAM)
 
   # - task: NodeTool@0
   #   inputs:

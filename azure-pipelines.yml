@@ -4,6 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 variables:
+  includeWebUI: true
   webRepoBranchName: 'Release7/Support-Sprint7'
   useIDAM: false
 
